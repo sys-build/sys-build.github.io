@@ -1,119 +1,190 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <!-- Template by html.am -->
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>Ft2 main</title>
-		<style type="text/css">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <title> Ft2 team </title>
+ <style type="text/css">
 
-			body{
-				margin:0;
-				padding:0;
-				font-family: Sans-Serif;
-				line-height: 1.5em;
-			}
+   /* Layout */
+   body {
+     min-width: 630px;
+   }
 
-			main {
-				padding-bottom: 10010px;
-				margin-bottom: -10000px;
-				float: left;
-				width: 100%;
-			}
+   #container {
+     padding-left: 310px;
+     padding-right: 310px;
+   }
 
-			#nav {
-				float: left;
-				width: 230px;
-				margin-left: -100%;
-				padding-bottom: 10010px;
-				margin-bottom: -10000px;
-				background: #eee;
-			}
+   #container .column {
+     position: relative;
+     float: left;
+   }
 
-			#wrapper {
-				overflow: hidden;
-			}
+   #center {
+     padding: 10px 20px;
+     width: 100%;
+   }
 
-			#content {
-				margin-left: 230px; /* Same as 'nav' width */
-			}
+   #left {
+     width: 300px;
+     padding: 0 10px;
+     right: 350px;
+     margin-left: -100%;
+   }
 
-			.innertube{
-				margin: 15px; /* Padding for content */
-				margin-top: 0;
-			}
+   #right {
+     width: 300px;
+     padding: 0 10px;
+     margin-right: -100%;
+   }
 
-			p {
-				color: #555;
-			}
+   #footer {
+     clear: both;
+   }
 
-			nav ul {
-				list-style-type: none;
-				margin: 0;
-				padding: 0;
-			}
+   /* IE hack */
+   * html #left {
+     left: 150px;
+   }
 
-			nav ul a {
-				color: darkgreen;
-				text-decoration: none;
-			}
+   /* Make the columns the same height as each other */
+   #container {
+     overflow: hidden;
+   }
 
-		</style>
+   #container .column {
+     padding-bottom: 1001em;
+     margin-bottom: -1000em;
+   }
 
-	</head>
+   /* Fix for the footer */
+   * html body {
+     overflow: hidden;
+   }
 
-	<body>
-		<div id="wrapper">
+   * html #footer-wrapper {
+     float: left;
+     position: relative;
+     width: 100%;
+     padding-bottom: 10010px;
+     margin-bottom: -10000px;
+     background: #fff;
+   }
 
-			<main>
-				<div id="content">
-					<div class="innertube">
-						<h1>Free time team</h1>
-						<p> Welcome to visit free time team </p>
-							<h2>Free time team</h2>
-							<li> <b> Official website </b> </li>
-							<a href="https://free-time-team.github.io/"> <p style="margin-left: 40px"> Free time team website </p> </a> <br>
-							<li> <b> Official forum </b> </li>
-							<a href="http://bbs.5ichai.com/"> <p style="margin-left: 40px"> For discuss </p> </a>
+   /* Aesthetics */
+   body {
+     margin: 0;
+     padding: 0;
+     font-family:Sans-serif;
+     line-height: 1.5em;
+   }
 
-					</div>
-				</div>
-			</main>
+   p {
+     color: #555;
+   }
 
-			<nav id="nav">
-				<div class="innertube">
+   nav ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+   }
 
-          <li><a href="https://free-time-team.github.io/ft2_cn.html"> 切换到中文主页 </a></li>
+   nav ul a {
+     color: darkgreen;
+     text-decoration: none;
+   }
 
-          <h3> About </h3>
-					<ul>
-						<li><a href="https://free-time-team.github.io/about/about_ft2_en.html"> English version </a></li>
-						<li><a href="https://free-time-team.github.io/about/about_ft2_cn.html"> Chinese version </a></li>
-					</ul>
+   #header, #footer {
+     font-size: large;
+     padding: 0.3em;
+     background: #BCCE98;
+   }
 
-					<h3> Announcement </h3>
-					<ul>
-						<li><a href="https://free-time-team.github.io/announcement.html"> News & Abstract </a></li>
+   #left {
+     background: #DAE9BC;
+   }
 
-					</ul>
+   #right {
+     background: #F7FDEB;
+   }
 
-					<h3> Donate </h3>
-					<ul>
-						<li><a href="https://free-time-team.github.io/about/donate.html"> Donate Free-time team </a></li>
-					</ul>
+   #center {
+     background: #fff;
+   }
 
-					<h3> Collaboration </h3>
-					<ul>
-						<li><a href="https://free-time-team.github.io/collaboration.html"> Collaboration </a></li>
-					</ul>
+   #container .column {
+     padding-top: 1em;
+   }
 
-					<h3> More... </h3>
-					<ul>
-						<li><a href="https://free-time-team.github.io/collaboration.html"> More </a></li>
-					</ul>
+ </style>
 
-				</div>
-			</nav>
+</head>
 
-		</div>
-	</body>
+<body>
+
+ <header id="header"><p><h1 align="center"> Ft2 team </h1></p></header>
+
+ <div id="container">
+
+   <main id="center" class="column">
+     <article>
+
+       <h1> 中文版 </h1>
+主页面: <a href="https://free-time-team.github.io/ft2_cn.html">Ft2-team 官网</a> <br>
+欢迎访问ft-team，中文版。
+
+       <h1>English Version</h1>
+Main page: <a href="https://free-time-team.github.io/ft2_en.html">Ft2-team website</a> <br>
+Welcome visit ft2 team, English version.
+
+     </article>
+   </main>
+
+   <div id="left" class="column">
+     <h3>快速导航</h3>
+     <ul>
+       <li><a href="https://free-time-team.github.io/nav/community_contributions_cn.html"> 社区贡献 </a></li>
+       <li><a href="https://free-time-team.github.io/nav/resource_cn.html"> 资源共享 </a></li>
+       <li><a href="https://free-time-team.github.io/nav/linux_kernel_cn.html"> Linux 内核 </a></li>
+       <li><a href="https://free-time-team.github.io/nav/assembly_cn.html"> 汇编语言学习 </a></li>
+       <li><a href="https://free-time-team.github.io/nav/python_cn.html"> Python学习 </a></li>
+       <li><a href="https://free-time-team.github.io/nav/docker_cn.html"> Docker技术 </a></li>
+       <li><a href="https://free-time-team.github.io/nav/riscv_cn.html"> Risc-V </a></li>
+       <li><a href="https://free-time-team.github.io/nav/security_cn.html"> 计算机安全技术 </a></li>
+       <li><a href="https://free-time-team.github.io/ft2_cn.html"> 发现更多... </a></li>
+<!--
+       <li><a href="#">todo</a></li>
+-->
+     </ul>
+
+   </div>
+
+   <div id="right" class="column">
+     <h3>Quick Navigation</h3>
+     <ul>
+     <li><a href="https://free-time-team.github.io/nav/community_contributions.html"> Patch for linux kernel </a></li>
+      <li><a href="https://free-time-team.github.io/nav/resource.html"> Share </a></li>
+      <li><a href="https://free-time-team.github.io/nav/linux_kernel.html"> Linux kernel </a></li>
+      <li><a href="https://free-time-team.github.io/nav/assembly.html"> Assembly language </a></li>
+      <li><a href="https://free-time-team.github.io/nav/python.html"> Python </a></li>
+      <li><a href="https://free-time-team.github.io/nav/docker.html"> Docker </a></li>
+      <li><a href="https://free-time-team.github.io/nav/riscv.html"> Risc-V </a></li>
+      <li><a href="https://free-time-team.github.io/nav/security.html"> Security </a></li>
+      <li><a href="https://free-time-team.github.io/ft2_cn.html"> More... </a></li>
+<!--
+     <li><a href="#">todo</a></li>
+-->
+     </ul>
+
+   </div>
+
+ </div>
+
+ <div id="footer-wrapper">
+   <footer id="footer"><p>Ft2-team</p></footer>
+ </div>
+
+</body>
+
 </html>
